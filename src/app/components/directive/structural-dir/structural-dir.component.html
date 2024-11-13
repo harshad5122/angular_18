@@ -1,0 +1,74 @@
+<div class="main-div w-100">
+    <h1>Structural Directive</h1>
+    <h5>*ngIf, *ngFor, ...</h5>
+</div>
+
+<div class="sub-div">
+    <div class="dd">
+        <div *ngIf="isDiv1Visible" class="div div-1">
+            <h1>DIV 1</h1>
+        </div>
+    </div>
+    <div class="dd">
+        <div *ngIf="isDiv2Visible" class="div div-2">
+            <h1>DIV 2</h1>
+        </div>
+    </div>
+    <div class="dd">
+        <div *ngIf="num1 == num2" class="div div-3">
+            <h1>DIV 3</h1>
+        </div>
+    </div>
+    <div class="dd dd-1">
+        <div *ngIf="selectedValue == 'USA'" class="div div-4">
+            <h1>DIV 4-1</h1>
+        </div>
+        <div *ngIf="isChecked" class="div div-4">
+            <h1>DIV 4-2</h1>
+        </div>
+    </div>
+</div>
+
+<div class="sub-div">
+    <div class="div dd btn-div-1">
+        <button class="hide-btn" (click)="onHideBtnClick()">Hide</button>
+        <button class="show-btn" (click)="onShowBtnClick()">Show</button>
+    </div>
+    <div class="div dd">
+        <button class="toggle-btn" (click)="onToggleBtnClick()">Toggle</button>
+    </div>
+    <div class="div dd">
+        <input type="text" placeholder="Enter anything" [(ngModel)]="num1" />
+        <input type="text" placeholder="Enter anything" [(ngModel)]="num2" />
+    </div>
+    <div class="div dd">
+        <input type="checkbox" [(ngModel)]="isChecked" />
+        <select class="dropdown" [(ngModel)]="selectedValue">
+            <option [value]="city" *ngFor="let city of cityArray">{{city}}</option>
+        </select>
+    </div>
+</div>
+
+<div class="margin-top">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sr. No</th>
+                <th>Employee Name</th>
+                <th>Employee Age</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employeeList; let ind = index">
+                <td>{{ind + 1}}</td>
+                <td>{{emp.eName}}</td>
+                <td>{{emp.eAge}}</td>
+                <td>
+                    <span *ngIf="emp.isActive">Active</span>
+                    <span *ngIf="!emp.isActive">De-Active</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

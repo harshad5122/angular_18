@@ -1,0 +1,88 @@
+.main-div {
+    padding: 5px 20px;
+    background-color: gray;
+    margin: 10px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+h1 {
+    margin-top: 10px !important;
+}
+
+.sub-div {
+    display: flex;
+    width: 100%;
+}
+
+.dd{
+    width: 24%;
+    margin-left: 12px;
+}
+
+.dd-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.div-1 {
+    background-color: red;
+}
+
+.div-2 {
+    background-color: green;
+}
+
+.div-3 {
+    background-color: gray;
+}
+
+.div-4 {
+    background-color: blue;
+}
+
+.hide-btn {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+    border: 0px;
+    margin-right: -90px;
+}
+
+.show-btn {
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+    border: 0px;
+    margin-left: -90px;
+
+}
+
+.toggle-btn {
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+    padding: 5px 20px;
+    border: 0px;
+
+}
+
+.btn-div-1 {
+    justify-content: space-around;
+}
+
+.dropdown {
+    margin-left: 20px;
+}
+
+.margin-top {
+    margin-top: 25px;
+}

@@ -1,0 +1,74 @@
+<div class="main-div w-100">
+    <h1>Attribute Directive</h1>
+    <h5>[ngClass], [ngStyle], ...</h5>
+</div>
+
+<div class="sub-div">
+    <div class="dd">
+        <div [ngClass]="div1BGColor" class="div div-1">
+            <h1>DIV 1</h1>
+        </div>
+    </div>
+    <div class="dd">
+        <div class="div div-2">
+            <h1>DIV 2</h1>
+        </div>
+    </div>
+    <div class="dd">
+        <div class="div div-3">
+            <h1>DIV 3</h1>
+        </div>
+    </div>
+    <div class="dd dd-1">
+        <div class="div div-4">
+            <h1>DIV 4-1</h1>
+        </div>
+        <div class="div div-4">
+            <h1>DIV 4-2</h1>
+        </div>
+    </div>
+</div>
+
+<div class="sub-div">
+    <div class="div dd btn-div-1">
+        <button class="hide-btn" (click)="addRedColor()">Add Red</button>
+        <button class="show-btn" (click)="addBlueColor()">Add Blue</button>
+    </div>
+    <div class="div dd">
+        <button class="toggle-btn">Toggle</button>
+    </div>
+    <div class="div dd">
+        <input type="text" placeholder="Enter anything"/>
+        <input type="text" placeholder="Enter anything"/>
+    </div>
+    <div class="div dd">
+        <input type="checkbox"/>
+        <select class="dropdown">
+            <option>city</option>
+        </select>
+    </div>
+</div>
+
+<!-- <div class="margin-top">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Sr. No</th>
+                <th>Employee Name</th>
+                <th>Employee Age</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let emp of employeeList; let ind = index">
+                <td>{{ind + 1}}</td>
+                <td>{{emp.eName}}</td>
+                <td>{{emp.eAge}}</td>
+                <td>
+                    <span>Active</span>
+                    <span>De-Active</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->

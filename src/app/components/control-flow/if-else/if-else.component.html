@@ -1,0 +1,62 @@
+<p>if-else works!</p>
+<div class="container">
+    <!-- if else statement -->
+    @if(ifVariable == 'hh'){
+    <h1>if</h1>
+    }@else{
+    <h1>else</h1>
+    }
+
+    <!-- else if ledder -->
+    @if(ifElseVaiavble == 'hh'){
+    <h2>first if condition block</h2>
+    } @else if (ifElseVaiavble == 'dd'){
+    <h2>second if condition block</h2>
+    } @else {
+    <h2>else block</h2>
+    }
+
+    <!-- for loop -->
+    @for (item of forLoopArray; track $index) {
+        <h5>{{item}}</h5>
+    }
+
+    <ul>
+        @for (item of forLoopArray; track $index) {
+            <li>{{item}}</li>
+        }
+    </ul>
+
+    @for (item of forLoopArray; track $index) {
+        <div>{{item}}</div>
+    }
+
+    <!-- Switch case -->
+    Today is: 
+    @switch (date) {
+        @case ('1') {
+            <span>Monday</span>
+        }
+        @case ('2') {
+            <span>Tuesday</span>
+        }
+        @case ('3') {
+            <span>Wednesday</span>
+        }
+        @case ('4') {
+            <span>Thursday</span>
+        }
+        @case ('5') {
+            <span>Friday</span>
+        }
+        @case ('6') {
+            <span>Saturday</span>
+        }
+        @case ('7') {
+            <span>Sunday</span>
+        }
+        @default {
+            <span>Please Enter Valid value</span>
+        }
+    }
+</div>
